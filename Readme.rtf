@@ -1,54 +1,17 @@
 **HOW TO REPLICATE THE WORK OF RAKUEN ?**
-\f1\i0\b0 \ulnone \
-\
-\
+
 - Create a folder containing the files abstracts.txt, train.csv, test.csv, coauthorship.edgelist, submission.csv, author_papers.txt  (these files are available on {\field{\*\fldinst{HYPERLINK "https://www.kaggle.com/c/inf554-2021/data"}}{\fldrslt 
-\f2\i https://www.kaggle.com/c/inf554-2021/data}}). The folder can be the one which contains the notebook.\
-\
+https://www.kaggle.com/c/inf554-2021/data}}). The folder can be the one which contains the notebook.\
+
 - Run the file preprocess_abstracts to create a new file abstracts_bar.csv and store that file with the others\
-\
-- Make sure to have installed 
-\f2\i pandas
-\f1\i0 , s
-\f2\i cikit-learn
-\f1\i0 , 
-\f2\i seaborn
-\f1\i0 , 
-\f2\i matplotlib, networkx
-\f1\i0  and 
-\f2\i TensorFlow
-\f1\i0 . Otherwise you will have to use 
-\f2\i pip install [name]
-\f1\i0 \
-\
-\
-- Open the notebook and follow the following steps :\
-	- Run 
-\f3\b General import 
-\f1\b0 \
-	- Run 
-\f3\b Data retrieval
-\f1\b0  (make sure to change all the file paths if necessary)\
-	- You can either choose to run 
-\f3\b word_embeddings
-\f1\b0  or 
-\f3\b TF-IDF
-\f1\b0 . Make sure to adapt the dimension to the 	capacity of the RAM.\
-	- Run 
-\f3\b Addition with graph features \
-	- 
-\f1\b0 In the part 
-\f3\b Models
-\f1\b0 , you can choose which model you want to run, 
-\f3\b DNN
-\f1\b0 (Multi-layer perceptron), 
-\f3\b XGBoost
-\f1\b0  or
-\f3\b  CATBoost
-\f1\b0 \
-	- Finally, run 
-\f3\b submit, 
-\f1\b0 make sure to change f
-\f3\b inal_model
-\f1\b0  into the model of your choice, and to change 	the name of the file you wish to save your predictions into.\
-	- You\'92re done, you can try to submit the predictions on the kaggle platform.}
+
+- Make sure to have installed pandas, scikit-learn, seaborn, matplotlib, networkx and TensorFlow Otherwise you will have to use pip install [name]
+
+- Open the notebook and follow the following steps :
+	- Run  General import 
+	- Run Data retrieval (make sure to change all the file paths if necessary)
+	- You can either choose to run word_embeddings or TF-IDF (Make sure to adapt the dimension to the capacity of the RAM.)
+	- Run Addition with graph features 
+	-  In the part Models, you can choose which model you want to run, DNN(Multi-layer perceptron), XGBoost, CATBoost
+	- Finally, run submit,  make sure to change final_model into the model of your choice, and to change the name of the file you wish to save your predictions into.
+	- You're done, you can try to submit the predictions on the kaggle platform.
